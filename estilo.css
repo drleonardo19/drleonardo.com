@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*MENÚ DESPLEGABLE*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+}
+
+*{
+
+}
+
+nav{
+	max-width: 500 px;
+	margin:auto;
+	background-color:#0B5313;
+	font-size: 30px;
+	margin-top:0px;
+}
+
+.menu-horizontal{
+	list-style: none;
+	display:flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal>li>a{
+	display:table-caption;
+	padding:30px 30px;
+	color:#DEA013;
+	text-shadow: 2px 4px 7px black;
+	text-decoration:underline;
+}
+
+.menu-horizontal>li:hover{
+	background-color:#80B9B2;	
+}
+
+.menu-vertical{
+	position: absolute;
+	display:none;
+	list-style: none;
+	width: 200px;
+	background-color: #0B5313;
+}
+	
+.menu-horizontal>li:hover .menu-vertical{
+	display:block;
+}
+
+.menu-vertical li:hover{
+	background-color:#741F1F;
+}
+.menu-vertical li a{
+	display: block;
+	color:#AFB4DB;
+	padding: 8px 8px 8px 8px;
+	text-decoration: none;
+}
+
+/*FIN MENÚ DESPLEGABLE*/
+
+#portafolio{
+	font-family:Climate Crisis;
+ 	font-size: 60px;
+ 	color:#240A43;
+	text-align: center;
+}
+
+.yopi{
+	width: 50%;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+h1 {
+ font-family:Climate Crisis;
+ font-size: 70px;
+ color:#240A43;
+text-align: center;
+}
+
+p{
+	margin: 30px 80px 80px 80px;
+	color:#240A43;
+}
+
+h2 {
+ font-family:Climate Crisis;
+ font-size: 50px;
+ color:#240A43;
+ text-align:center;
+}
+
+h3 {
+ font-family:Climate Crisis;
+ font-size: 30px;
+ color:#240A43;
+ text-align:center;
+}
+
+h4{
+ font-family:Climate Crisis;
+ font-size: 20px;
+ color:#240A43;
+ text-align:center;
+}
+
+h5{
+ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+ font-size: 20px;	
+ color:#240A43;
+ text-align:center;
+}
+
+.negritas{font-weight:bold;
+color:maroon;}
+
+
+.video{
+	width: 50%;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:20px;
+}
+
+#logo{
+	width: 10%;
+	display:block;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:20px
+}
+/*CARRUSEL*/
+
+
+.galeria {
+	width: 800px;
+	height: auto;
+}
+
+.slider-frame {
+	width: 800px;
+	height: auto;
+	margin: 20px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	list-style: none;
+	display: flex;
+	animation: movimiento-slider 16s infinite alternate ease-in-out;
+}
+
+.redes{
+	text-align: center;
+}
+
+@keyframes movimiento-slider {
+	0%{ transform: translateX(0%);}
+	13%{ transform: translateX(0%);}
+	
+	18%{ transform: translateX(-100%);}
+	31%{ transform: translateX(-100%);}
+	
+	36%{ transform: translateX(-200%);}
+	49%{ transform: translateX(-200%);}
+	
+	54%{ transform: translateX(-300%);}
+	67%{ transform: translateX(-300%);}
+	
+	72%{ transform: translateX(-400%);}
+	85%{ transform: translateX(-400%);}
+	
+	90%{ transform: translateX(-500%);}
+	100%{ transform: translateX(-500%);}
+}
+
+.vanila{
+	width: 50%;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:20px
+}
+#mono {  
+width: 50%;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:20px;
+}
+
+.ilus{
+	width: 50%;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:20px
+}
+	
